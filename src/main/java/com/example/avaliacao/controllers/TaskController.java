@@ -70,7 +70,7 @@ public class TaskController {
 
     @PatchMapping("/{id}")
     public TaskEntity editStatus(@PathVariable("id") Long task_id, @RequestBody TaskEntity updateStatus) throws Exception {
-        return taskService.editTask(task_id, updateStatus);
+        return taskService.editStatus(task_id, updateStatus);
     }
 
 }
